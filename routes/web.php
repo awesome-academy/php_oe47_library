@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [AdminController::class, 'index'])->name('dashboard');
+
+/**
+ * Change Language
+ */
+Route::get('locale/{locale}', [LanguageController::class, 'changeLanguage'])->name('locale');
