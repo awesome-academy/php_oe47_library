@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "affa5596536ad5b6db5a9f00333a9c47",
+    "content-hash": "150339c284cf85b936b6774a52cba182",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -64,16 +64,16 @@
         },
         {
             "name": "brick/math",
-            "version": "0.9.2",
+            "version": "0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "dff976c2f3487d42c1db75a3b180e2b9f0e72ce0"
+                "reference": "ca57d18f028f84f777b2168cd1911b0dee2343ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/dff976c2f3487d42c1db75a3b180e2b9f0e72ce0",
-                "reference": "dff976c2f3487d42c1db75a3b180e2b9f0e72ce0",
+                "url": "https://api.github.com/repos/brick/math/zipball/ca57d18f028f84f777b2168cd1911b0dee2343ae",
+                "reference": "ca57d18f028f84f777b2168cd1911b0dee2343ae",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
                 "phpunit/phpunit": "^7.5.15 || ^8.5 || ^9.0",
-                "vimeo/psalm": "4.3.2"
+                "vimeo/psalm": "4.9.2"
             },
             "type": "library",
             "autoload": {
@@ -108,88 +108,19 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.9.2"
+                "source": "https://github.com/brick/math/tree/0.9.3"
             },
             "funding": [
+                {
+                    "url": "https://github.com/BenMorel",
+                    "type": "github"
+                },
                 {
                     "url": "https://tidelift.com/funding/github/packagist/brick/math",
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-20T22:51:39+00:00"
-        },
-        {
-            "name": "composer/package-versions-deprecated",
-            "version": "1.11.99.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/package-versions-deprecated.git",
-                "reference": "c6522afe5540d5fc46675043d3ed5a45a740b27c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/c6522afe5540d5fc46675043d3ed5a45a740b27c",
-                "reference": "c6522afe5540d5fc46675043d3ed5a45a740b27c",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1.0 || ^2.0",
-                "php": "^7 || ^8"
-            },
-            "replace": {
-                "ocramius/package-versions": "1.11.99"
-            },
-            "require-dev": {
-                "composer/composer": "^1.9.3 || ^2.0@dev",
-                "ext-zip": "^1.13",
-                "phpunit/phpunit": "^6.5 || ^7"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "PackageVersions\\Installer",
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PackageVersions\\": "src/PackageVersions"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
-                },
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be"
-                }
-            ],
-            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
-            "support": {
-                "issues": "https://github.com/composer/package-versions-deprecated/issues",
-                "source": "https://github.com/composer/package-versions-deprecated/tree/1.11.99.2"
-            },
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/composer",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-05-24T07:46:03+00:00"
+            "time": "2021-08-15T20:50:18+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -367,35 +298,33 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.1.1",
+            "version": "2.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "8e0fde2b90e3f61361013d1e928621beeea07bc0"
+                "reference": "8dd39d2ead4409ce652fd4f02621060f009ea5e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/8e0fde2b90e3f61361013d1e928621beeea07bc0",
-                "reference": "8e0fde2b90e3f61361013d1e928621beeea07bc0",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/8dd39d2ead4409ce652fd4f02621060f009ea5e4",
+                "reference": "8dd39d2ead4409ce652fd4f02621060f009ea5e4",
                 "shasum": ""
             },
             "require": {
-                "composer/package-versions-deprecated": "^1.11.99",
                 "doctrine/cache": "^1.0|^2.0",
                 "doctrine/deprecations": "^0.5.3",
                 "doctrine/event-manager": "^1.0",
-                "php": "^7.3 || ^8.0"
+                "ext-pdo": "*",
+                "php": "^7.1 || ^8"
             },
             "require-dev": {
                 "doctrine/coding-standard": "9.0.0",
                 "jetbrains/phpstorm-stubs": "2020.2",
                 "phpstan/phpstan": "0.12.81",
-                "phpstan/phpstan-strict-rules": "^0.12.2",
-                "phpunit/phpunit": "9.5.5",
-                "psalm/plugin-phpunit": "0.13.0",
+                "phpunit/phpunit": "^7.5.20|^8.5|9.5.5",
                 "squizlabs/php_codesniffer": "3.6.0",
-                "symfony/cache": "^5.2|^6.0",
-                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0|^6.0",
+                "symfony/cache": "^4.4",
+                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
                 "vimeo/psalm": "4.6.4"
             },
             "suggest": {
@@ -407,7 +336,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Doctrine\\DBAL\\": "src"
+                    "Doctrine\\DBAL\\": "lib/Doctrine/DBAL"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -450,13 +379,14 @@
                 "queryobject",
                 "sasql",
                 "sql",
+                "sqlanywhere",
                 "sqlite",
                 "sqlserver",
                 "sqlsrv"
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.1.1"
+                "source": "https://github.com/doctrine/dbal/tree/2.13.2"
             },
             "funding": [
                 {
@@ -472,7 +402,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-19T17:59:55+00:00"
+            "time": "2021-06-18T21:48:39+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1533,22 +1463,80 @@
             "time": "2021-03-02T16:53:12+00:00"
         },
         {
-            "name": "league/commonmark",
-            "version": "2.0.1",
+            "name": "laravel/ui",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "0d57f20aa03129ee7ef5f690e634884315d4238c"
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "07d725813350c695c779382cbd6dac0ab8665537"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/0d57f20aa03129ee7ef5f690e634884315d4238c",
-                "reference": "0d57f20aa03129ee7ef5f690e634884315d4238c",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/07d725813350c695c779382cbd6dac0ab8665537",
+                "reference": "07d725813350c695c779382cbd6dac0ab8665537",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.42",
+                "illuminate/filesystem": "^8.42",
+                "illuminate/support": "^8.42",
+                "illuminate/validation": "^8.42",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v3.3.0"
+            },
+            "time": "2021-05-25T16:45:33+00:00"
+        },
+        {
+            "name": "league/commonmark",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "2df87709f44b0dd733df86aef0830dce9b1f0f13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/2df87709f44b0dd733df86aef0830dce9b1f0f13",
+                "reference": "2df87709f44b0dd733df86aef0830dce9b1f0f13",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "league/config": "^1.1",
+                "league/config": "^1.1.1",
                 "php": "^7.4 || ^8.0",
                 "psr/event-dispatcher": "^1.0",
                 "symfony/polyfill-php80": "^1.15"
@@ -1641,24 +1629,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-31T19:15:22+00:00"
+            "time": "2021-08-14T14:06:04+00:00"
         },
         {
             "name": "league/config",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/config.git",
-                "reference": "20d42d88f12a76ff862e17af4f14a5a4bbfd0925"
+                "reference": "a9d39eeeb6cc49d10a6e6c36f22c4c1f4a767f3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/config/zipball/20d42d88f12a76ff862e17af4f14a5a4bbfd0925",
-                "reference": "20d42d88f12a76ff862e17af4f14a5a4bbfd0925",
+                "url": "https://api.github.com/repos/thephpleague/config/zipball/a9d39eeeb6cc49d10a6e6c36f22c4c1f4a767f3e",
+                "reference": "a9d39eeeb6cc49d10a6e6c36f22c4c1f4a767f3e",
                 "shasum": ""
             },
             "require": {
-                "dflydev/dot-access-data": "^3.0",
+                "dflydev/dot-access-data": "^3.0.1",
                 "nette/schema": "^1.2",
                 "php": "^7.4 || ^8.0"
             },
@@ -1723,7 +1711,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-19T15:52:37+00:00"
+            "time": "2021-08-14T12:15:32+00:00"
         },
         {
             "name": "league/flysystem",
@@ -2129,16 +2117,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "967cfc4f9a1acd5f1058d76715a424c53343c20c"
+                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/967cfc4f9a1acd5f1058d76715a424c53343c20c",
-                "reference": "967cfc4f9a1acd5f1058d76715a424c53343c20c",
+                "url": "https://api.github.com/repos/nette/utils/zipball/5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
+                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
                 "shasum": ""
             },
             "require": {
@@ -2208,9 +2196,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.2"
+                "source": "https://github.com/nette/utils/tree/v3.2.3"
             },
-            "time": "2021-03-03T22:53:25+00:00"
+            "time": "2021-08-16T21:05:00+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -5789,16 +5777,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.11.2",
+            "version": "2.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "7c4e7a7da184cd00c7ce6eacc590200bb9672de7"
+                "reference": "7ac7f9729f178f64335728bcaf1499ec3c6a540f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/7c4e7a7da184cd00c7ce6eacc590200bb9672de7",
-                "reference": "7c4e7a7da184cd00c7ce6eacc590200bb9672de7",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/7ac7f9729f178f64335728bcaf1499ec3c6a540f",
+                "reference": "7ac7f9729f178f64335728bcaf1499ec3c6a540f",
                 "shasum": ""
             },
             "require": {
@@ -5861,7 +5849,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "time": "2021-07-20T14:01:22+00:00"
+            "time": "2021-08-16T13:18:40+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -6295,16 +6283,16 @@
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v5.7.0",
+            "version": "v5.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "0f0f46b6345ee788325b5ce9d53c4e851b2293a0"
+                "reference": "0c3c393462eada1233513664e2d22bb9f69ca393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/0f0f46b6345ee788325b5ce9d53c4e851b2293a0",
-                "reference": "0f0f46b6345ee788325b5ce9d53c4e851b2293a0",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/0c3c393462eada1233513664e2d22bb9f69ca393",
+                "reference": "0c3c393462eada1233513664e2d22bb9f69ca393",
                 "shasum": ""
             },
             "require": {
@@ -6379,7 +6367,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-08-12T13:56:54+00:00"
+            "time": "2021-08-13T14:23:01+00:00"
         },
         {
             "name": "phar-io/manifest",
