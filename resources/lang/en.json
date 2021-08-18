@@ -84,5 +84,8 @@
     "send_password": "Send Password Reset Link",
     "reset_password":"Reset password",
     "email_address":"Email address",
-    "admin_index":"Page Admin"
+    "admin_index":"Page Admin",
+
+    "categories_desc" : "Description",
+    "parent_id":"Category parent name"
 }

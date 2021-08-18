@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Auth;
@@ -24,6 +25,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // Route::get('/admin', [AdminController::class, 'index'])->name('dashboard');
 Route::group(['name' => 'admin.', 'prefix' => 'admin', 'middleware' => 'adminmiddleware'], function () {
     Route::get('/', [AdminController::class, 'index'])->name('index');
+    Route::resource('categories', CategoryController::class);
 });
 /**
  * Change Language

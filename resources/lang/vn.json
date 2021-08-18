@@ -82,5 +82,8 @@
     "send_password": "Gửi liên kết đặt lại mật khẩu",
     "reset_password":"Đặt lại mật khẩu",
     "email_address":"Địa chỉ email",
-    "admin_index":"Trang quản trị"
+    "admin_index":"Trang quản trị",
+
+    "categories_desc" : "Mô tả",
+    "parent_id":"Danh mục cha"
 }
