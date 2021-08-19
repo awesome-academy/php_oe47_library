@@ -13,13 +13,13 @@
         <div class="sidebar-wrapper">
             <ul class="nav">
                 <li class="active ">
-                    <a href="">
+                    <a href="{{ route('index') }}">
                         <i class="nc-icon nc-bank"></i>
                         <p>@lang('dashboard')</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{ route('categories.index') }}">
                         <i class="nc-icon nc-diamond"></i>
                         <p>@lang('category')</p>
                     </a>
