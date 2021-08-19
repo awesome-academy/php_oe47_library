@@ -5,6 +5,7 @@ return [
     'role_admin' => 1,
     'role_user' => 2,
     'paginate' => 10,
+    'paginate_listBook' => 6,
     /*
     |--------------------------------------------------------------------------
     | Application Name
