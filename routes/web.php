@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LanguageController;
@@ -22,11 +23,13 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-// Route::get('/admin', [AdminController::class, 'index'])->name('dashboard');
+//admin
 Route::group(['name' => 'admin.', 'prefix' => 'admin', 'middleware' => 'adminmiddleware'], function () {
     Route::get('/', [AdminController::class, 'index'])->name('index');
     Route::resource('categories', CategoryController::class);
+    Route::resource('books', BookController::class);
 });
+
 /**
  * Change Language
  */

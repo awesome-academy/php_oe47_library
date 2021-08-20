@@ -15,9 +15,9 @@ class Category extends Model
         'parent_id',
     ];
 
-    public function bookCategories()
+    public function books()
     {
-        return $this->hasMany(Book_Category::class);
+        return $this->belongsToMany(Category::class, 'book_category', 'book_id', 'category_id');
     }
 
     public function childrens()

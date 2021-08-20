@@ -19,6 +19,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('books.index') }}">
+                        <i class="nc-icon nc-pin-3"></i>
+                        <p>@lang('book')</p>
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('categories.index') }}">
                         <i class="nc-icon nc-diamond"></i>
                         <p>@lang('category')</p>

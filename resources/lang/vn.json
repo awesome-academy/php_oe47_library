@@ -85,5 +85,20 @@
     "admin_index":"Trang quản trị",
 
     "categories_desc" : "Mô tả",
-    "parent_id":"Danh mục cha"
+    "parent_id":"Danh mục cha",
+
+    "author_name":"Tác giả",
+    "publisher_name":"Nhà xuất bản",
+    "descrip":"Mô tả",
+    "quantity":"Số lượng",
+    "status":"Tình trạng",
+    "list_book":" Danh sách sách",
+    "detail_book":"Chi tiết sách",
+    "rate":"Đánh giá",
+    "commnet":"Bình luận",
+    "avaiable_now":"Mượn sách ngay",
+    "avaiable":"Có sẵn",
+    "hold":"Giữ",
+    "shevels":"Hiện đã lên kệ tại",
+    "library":"Huế, Việt Nam"
 }

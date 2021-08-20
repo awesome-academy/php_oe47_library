@@ -87,5 +87,22 @@
     "admin_index":"Page Admin",
 
     "categories_desc" : "Description",
-    "parent_id":"Category parent name"
+    "parent_id":"Category parent name",
+
+    "author_name":"Author",
+    "publisher_name":"Publisher",
+    "descrip":"Description",
+    "quantity":"Quantity",
+    "status":"Status",
+    "list_book":" List book",
+    "detail_book":"Detail Book",
+    "rate":"Rating",
+    "commnet":"Comment",
+    "note":"Summary",
+    "avaiable_now":"Available now",
+    "avaiable":"Available",
+    "hold":"Holds",
+    "shelves":"On the shelves now at",
+    "library":"Hue, Vietnam"
+
 }
