@@ -22,6 +22,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/login', [HomeController::class, 'showLoginForm'])->name('login');
+Route::get('/register', [HomeController::class, 'showRegistrationForm'])->name('register');
+
 
 //admin
 Route::group(['name' => 'admin.', 'prefix' => 'admin', 'middleware' => 'adminmiddleware'], function () {
@@ -29,6 +32,11 @@ Route::group(['name' => 'admin.', 'prefix' => 'admin', 'middleware' => 'adminmid
     Route::resource('categories', CategoryController::class);
     Route::resource('books', BookController::class);
 });
+
+//home
+Route::get('/listBook', [HomeController::class, 'listBook'])->name('listBook');
+Route::get('/detail/{id}', [HomeController::class, 'detailBook'])->name('detailBook');
+Route::get('/listBook/{categoryID}', [HomeController::class, 'listBookByCategory'])->name('listBook.category');
 
 /**
  * Change Language

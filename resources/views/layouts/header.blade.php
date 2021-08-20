@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>LIBRARIA | @yield('title')</title>
-    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="{{ asset('assets/images/favicon.ico') }}" rel="icon" type="image/x-icon" />
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i"
         rel="stylesheet" />
-    <link href="assets/css/mmenu.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/mmenu.positioning.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="{{ mix('/css/style.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('/style.css') }}" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -28,7 +27,8 @@
                                 <div class="navbar-brand">
                                     <h1>
                                         <a href="{{ route('home') }}">
-                                            <img src="assets/images/libraria-logo-v1.png" alt="LIBRARIA" />
+                                            <img src="{{ asset('assets/images/libraria-logo-v1.png') }}"
+                                                alt="LIBRARIA" />
                                         </a>
                                     </h1>
                                 </div>
@@ -75,7 +75,8 @@
                                                                         class="fa fa-lock"></i>@lang('my_account')</a>
                                                             </div>
                                                         </li>
-                                                        @if(Auth::user()->can('adminmiddleware', config('app.role_admin')))
+                                                        @if(Auth::user()->can('adminmiddleware',
+                                                        config('app.role_admin')))
                                                         <li class="clearfix">
                                                             <div class="item-info">
                                                                 <a href="{{ route('admin.index') }}"><i
@@ -88,7 +89,7 @@
                                                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                                                     id="logout"
                                                                     onclick="event.preventDefault();
-                                                            document.getElementById('form-logout').submit();">@lang('logout')</a>
+                                                                                document.getElementById('form-logout').submit();">@lang('logout')</a>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -97,7 +98,6 @@
                                                         @csrf
                                                     </form>
                                                 </div>
-
                                             </div>
                                             @endguest
                                         </div>
@@ -110,10 +110,23 @@
                                         <a class=" disabled" href="{{ route('home') }}">@lang('home')</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a data-toggle="dropdown" class="dropdown-toggle disabled"
-                                            href="books-media-list-view.html">@lang('book')</a>
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" data-mdb-toggle="dropdown"
+                                        aria-expanded="false"
+                                            href="{{ route('listBook') }}">@lang('book')</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="">categoryName</a></li>
+                                            @foreach($categories as $category)
+                                                    <li class="dropdown-item" >
+                                                        <a href="{{ route('listBook.category', $category->id) }}">{{ $category->name }}</a>
+                                                        <ul class="dropdown-submenu dropdown-menu">
+                                                            @foreach($subCategories as $cate)
+                                                                @if($category->id == $cate->parent_id)
+                                                                    <li><a class="dropdown-item" href="{{ route('listBook.category',$cate->id) }}">{{ $cate->name }}</a></li>
+                                                                @endif
+                                                            @endforeach
+                                                        </ul>
+                                                        <div class="dropdown-divider"></div>
+                                                    </li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                     <li><a href="">@lang('review')</a></li>
@@ -129,16 +142,18 @@
                         <div id="mobile-menu">
                             <ul>
                                 <li class="mobile-title">
-                                    <a href="index-2.html">
-                                        <img src="assets/images/libraria-logo-v1.png" alt="LIBRARIA" />
+                                    <a href="{{ route('home') }}">
+                                        <img src="{{ asset('assets/images/libraria-logo-v1.png') }}" alt="LIBRARIA" />
                                     </a>
                                     <a href="#" class="close"></a>
                                 </li>
                                 <li> <a href="{{ route('home') }}">@lang('home')</a></li>
                                 <li>
-                                    <a href="books-media-list-view.html">@lang('book')</a>
+                                    <a href="{{ route('listBook') }}">@lang('book')</a>
                                     <ul>
-                                        <li><a href="books-media-list-view.html">categoryName</a></li>
+                                        @foreach($categories as $category)
+                                            <li><a href="">{{ $category->name }}</a></li>
+                                        @endforeach
                                     </ul>
                                 </li>
                                 <li><a href="">@lang('review')</a></li>
