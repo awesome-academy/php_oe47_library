@@ -82,22 +82,6 @@
     </div>
 </footer>
 <!-- End: Footer -->
-<script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/mmenu.min.js"></script>
-<script type="text/javascript" src="assets/js/harvey.min.js"></script>
-<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
-<script type="text/javascript" src="assets/js/facts.counter.min.js"></script>
-<script type="text/javascript" src="assets/js/mixitup.min.js"></script>
-<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="assets/js/accordion.min.js"></script>
-<script type="text/javascript" src="assets/js/responsive.tabs.min.js"></script>
-<script type="text/javascript" src="assets/js/responsive.table.min.js"></script>
-<script type="text/javascript" src="assets/js/masonry.min.js"></script>
-<script type="text/javascript" src="assets/js/carousel.swipe.min.js"></script>
-<script type="text/javascript" src="assets/js/bxslider.min.js"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="{{ mix('/js/main.js') }}"></script>
 
 </body>

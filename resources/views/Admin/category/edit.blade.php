@@ -37,7 +37,7 @@
                     @lang('parent_id')
                 </label>
                 <select name="parent_id" id="parent_id" class="form-control">
-                    <option value="null">@lang('none')</option>
+                    <option value="0">@lang('none')</option>
                     @foreach ($categories as $cate)
                         @if($cate->id != $category->id)
                             <option value="{{ $cate->id }}"
